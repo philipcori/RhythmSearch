@@ -1,2 +1,5 @@
 env
 .idea
+*.mp3
+*.wav
+*.ipynb_checkpoints
