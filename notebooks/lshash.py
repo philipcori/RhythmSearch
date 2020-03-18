@@ -286,7 +286,7 @@ class LSHash(object):
         if len(candidates) == 0:
             print("No Similar Candidates")
             for table in self.hash_tables:
-                distances = [hamming_binary(binary_hash, key) for key in table.keys()]
+                distances = [self.hamming_binary(binary_hash, key) for key in table.keys()]
 
         # rank candidates by distance function
         candidates = [(ix.id, d_func(query_point, self._as_np_array(ix.bs)))
